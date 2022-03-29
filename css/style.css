@@ -41,30 +41,31 @@ section.full{
     align-items: center;
     justify-content: center;
     margin: 0;
-    min-height: 100vh;
 }
 
 .carrossel {
-    box-shadow: 2px 2px 4px black;
     overflow: hidden;
-    height: 500px;
-    width: 600px;
-
+    margin: 0 auto;
+    width: 100%;
 }
 
 .container-img {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     transform: translateX(0);
+    overflow: hidden;
+    margin: 0 auto;
+    width: 50%;
+    height: 50vh;
 }
 
 .img-carrossel {
+    transition: all 0.5s ease-out;
     object-fit: cover;
-    height: 500px;
-    width: 600px;
+    width: 100% !important;
     margin: 0;
     padding: 0;
-
+    position: absolute;
+    left: 0;
 }
 
 
@@ -81,3 +82,20 @@ footer nav ul{
 footer nav ul li  {
     padding: 10px;
 }
+
+/* Responsividade laptop */
+@media all and (max-width: 1024px) {
+
+}
+
+
+/* Responsividade tablet */
+@media all and (max-width: 768px) {
+
+    #sobre{
+    flex:none;
+    }
+}
+
+/* Responsividade celular */
+@media all and (max-width: 425px) {}
