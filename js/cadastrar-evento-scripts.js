@@ -15,7 +15,7 @@ btnEnviar.onclick = async (evento) => {
             poster: 'link da imagem',
             attractions: inputAtracoes.value.split(','),
             description: inputDescricao.value,
-            //scheduled: new Date(inputData.value).toISOString(),
+            scheduled: new Date(inputData.value).toISOString(),
             number_tickets: parseInt(inputLotacao.value)
         };
 
@@ -26,6 +26,8 @@ btnEnviar.onclick = async (evento) => {
                 "Content-Type": "application/json",
             },
         };
+
+
 
         const resposta = await fetch(`${BASE_URL}/events`, options);
         const conteudoResposta = await resposta.json();
