@@ -16,10 +16,13 @@
         <img src="img/Sound-logo (1).png" width="300" alt="">
     </header>
     <main>
-        <section class="full d-flex justify-content-center align-items-center"
-            style="background-color: #F8BBD0; color: #fff">
-            <div class="text-center">
-                <h1>Adicione um banner maneiro aqui</h1>
+        <section class="full d-flex justify-content-center align-items-center" style="background-color: #F8BBD0" id="section-carrossel">
+            <div class="carrossel">
+            <div class="container-img" id="img">
+                <img src="./img/show1.jpg" alt="Palco Rock in Rio" title="Palco Rock in Rio" class="img-carrossel">
+                <img src="./img/show3.jpg" alt="Público de Show" title="Público de Show" class="img-carrossel">
+                <img src="./img/show4.jpg" alt="Final de Show" title="Final de Show" class="img-carrossel">
+            </div>
             </div>
         </section>
         <section class="full">
@@ -27,30 +30,15 @@
                 <h2>Próximos eventos</h2>
             </div>
             <div class="container d-flex justify-content-center align-items-center">
-                <article class="evento card p-5 m-3">
+                <p>Carregando...</p>
+                <!-- <article class="evento card p-5 m-3">
                     <h2>nome do evento - 05/03/2022</h2>
                     <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
                         dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
                         nobis in inventore tenetur asperiores.</p>
                     <a href="#" class="btn btn-primary">reservar ingresso</a>
-                </article>
-                <article class="evento card p-5 m-3">
-                    <h2>nome do evento - 05/03/2022</h2>
-                    <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
-                        dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
-                        nobis in inventore tenetur asperiores.</p>
-                    <a href="#" class="btn btn-primary">reservar ingresso</a>
-                </article>
-                <article class="evento card p-5 m-3">
-                    <h2>nome do evento - 05/03/2022</h2>
-                    <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
-                        dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
-                        nobis in inventore tenetur asperiores.</p>
-                    <a href="#" class="btn btn-primary">reservar ingresso</a>
-                </article>
+                </article> -->
             </div>
             <div class="container text-center">
                 <a href="eventos.html" class="btn btn-secondary">ver todos os eventos</a>
@@ -60,7 +48,7 @@
             style="background-color: #f2f2f2; color: #555">
             <div class="container">
                 <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col">
+                    <div class="col" id="sobre">
                         <h2>A Sound Garden</h2>
 
                         <p>Sound Garden é uma casa de show super descolada</p>
@@ -104,6 +92,8 @@
             </nav>
         </div>
     </footer>
+    <script type="text/javascript" src="./js/home.js"></script>
+    <script type="text/javascript" src="./js/carrossel.js"></script>
 </body>
 
 </html>
