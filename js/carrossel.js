@@ -1,15 +1,18 @@
 const imgs = document.getElementById('img');
 const img = document.querySelectorAll('#img img');
 
-let idx=0;
+let idx = img.length;
 
 function carrossel () {
-    idx++;
+    img[idx - 1].style.left = `-100%`;
 
-    if(idx > img.length -1) {
-        idx=0;
+    idx--;
+
+    if (idx === 0) {
+        idx = img.length;
+
+        img.forEach(element => element.style.left = '0');
     }
-    imgs.style.transform = `translateX(${-idx *600}px)`;
 }
 
 setInterval(carrossel, 1800);
