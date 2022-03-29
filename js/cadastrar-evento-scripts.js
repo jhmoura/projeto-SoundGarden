@@ -28,6 +28,7 @@ btnEnviar.onclick = async (evento) => {
         };
 
 
+
         const resposta = await fetch(`${BASE_URL}/events`, options);
         const conteudoResposta = await resposta.json();
         console.log(conteudoResposta);
