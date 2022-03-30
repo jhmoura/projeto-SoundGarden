@@ -62,9 +62,11 @@ btnEnviar.onclick = async (evento) => {
         //console.log(conteudoResposta);
 
         alert("Evento modificado com sucesso")
+        window.location.href = "admin.html"
+        
     } catch {
         alert("Erro. Verifique os campos e tente novamente")
     }
 
-    window.location.href = "admin.html"
+    
 }
