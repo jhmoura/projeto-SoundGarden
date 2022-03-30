@@ -67,6 +67,5 @@ btnEnviar.onclick = async (evento) => {
     } catch {
         alert("Erro. Verifique os campos e tente novamente")
     }
-
     
 }
