@@ -36,6 +36,40 @@ section.full{
     padding: 50px 0;
 }
 
+#section-carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.carrossel {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container-img {
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0);
+    overflow: hidden;
+    margin: 0 auto;
+    width: 50%;
+    height: 50vh;
+}
+
+.img-carrossel {
+    transition: all 0.5s ease-out;
+    object-fit: cover;
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+}
+
+
+
 article.evento {
     width: 350px;
 }
@@ -48,3 +82,20 @@ footer nav ul{
 footer nav ul li  {
     padding: 10px;
 }
+
+/* Responsividade laptop */
+@media all and (max-width: 1024px) {
+
+}
+
+
+/* Responsividade tablet */
+@media all and (max-width: 768px) {
+
+    #sobre{
+    flex:none;
+    }
+}
+
+/* Responsividade celular */
+@media all and (max-width: 425px) {}
