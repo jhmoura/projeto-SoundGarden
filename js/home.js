@@ -10,7 +10,7 @@ const btnReserva = document.querySelector("#btnReserva");
 const nome = document.querySelector("#nome");
 const email = document.querySelector("#email");
 const qtdIngressos = document.querySelector("#qtd");
-var aaa = "bbb";
+let idEvento = ""
 
 const eventoAbrirModal = (id) => {
     const botao = document.querySelector(`#btn${id}`);
@@ -18,7 +18,7 @@ const eventoAbrirModal = (id) => {
     botao.addEventListener("click", (evento)=>{
         myModal.style.display = "block";
         console.log(botao.id.slice(3));
-        // window.location.href += "?id=aaaaaaaa"
+        idEvento = botao.id.slice(3);
     });
     
 }
@@ -63,18 +63,30 @@ window.onclick = function(event) {
   }
   
 
-btnReserva.addEventListener("click", (evento)=>{
+btnReserva.addEventListener("click", async (evento)=>{
     evento.preventDefault();
-    const idEvento = "Hhhhhhh";
-    reserva = {
-        owner_name: nome.value,
-        owner_email: email.value,
-        number_tickets: qtdIngressos.value,
-        event_id: idEvento
-    };
-    console.log(reserva);
-    const reqOptions = {
-        method: 'POST',
-        body: reserva
-    };
-})
+    try{
+        reserva = {
+            owner_name: nome.value,
+            owner_email: email.value,
+            number_tickets: qtdIngressos.value,
+            event_id: idEvento
+        };
+        console.log(reserva);
+        const reqOptions = {
+            method: 'POST',
+            body: JSON.stringify(reserva),
+            headers: {
+                "Content-Type": "application/json",
+            }
+        };
+
+        const resposta = await fetch(`${BASE_URL}/bookings`,reqOptions);
+        console.log(resposta);
+
+        alert('Reservada realizada')
+        window.location.href = "index.html"
+    }catch {
+        alert('Erro na reserva: reveja os campos e tente novamente')
+    }
+});
