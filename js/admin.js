@@ -11,7 +11,7 @@ const ListarEventos = async () => {
     //console.log(eventos);
     const htmlEventos = eventos.map((evento, index)=> {
         const dataEvento = new Date(evento.scheduled);
-        const linhaHTML = `<tr>
+        const linhaHTML = `<tr class="linha-evento">
         <th scope="row">${index+1}</th>
         <td>${dataEvento.toLocaleDateString('en-GB')} <br> ${dataEvento.toLocaleTimeString('en-GB').slice(0,-3)}</td>
         <td>${evento.name}</td>

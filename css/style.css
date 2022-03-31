@@ -115,7 +115,31 @@ footer nav ul li  {
     #sobre{
     flex:none;
     }
+    #bloco-inicio
+    {
+        flex-wrap: wrap;
+    }
+   
+    .table {
+        width: 550px;
+    }
 }
 
 /* Responsividade celular */
-@media all and (max-width: 425px) {}
+@media all and (max-width: 425px) {
+
+    #bloco-inicio
+    {
+        flex-wrap: wrap;
+    }
+
+    #img-inicio {
+        max-width: 400px;
+    }
+
+    #lateral{
+        display:none!important;
+    }
+}
+
+
