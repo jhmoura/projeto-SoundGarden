@@ -27,7 +27,7 @@ const mostrarEvento = async (evento) =>{
 mostrarEvento()
 
 const listarReservas = async () => {
-    const resposta = await fetch(`${BASE_URL}/bookings/?id=${paramID}`, optionsEvents);
+    const resposta = await fetch(`${BASE_URL}/bookings/event/${paramID}`, optionsEvents);
     //console.log(resposta);
     const reservas = await resposta.json();
     //console.log(reservas);
