@@ -34,6 +34,7 @@ btnEnviar.onclick = async (evento) => {
         console.log(conteudoResposta);
 
         alert("Evento cadastrado com sucesso");
+        document.location.reload();
     } catch {
         alert("Erro. Verifique os campos e tente novamente");
     }
