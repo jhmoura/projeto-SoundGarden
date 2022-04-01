@@ -170,6 +170,7 @@ footer nav ul li  {
 
     #titulo-admin {
         font-size: 25px;
+        text-align: center;
     }
 
     .img-responsive {
@@ -182,6 +183,30 @@ footer nav ul li  {
 
  #section-carrossel {
      display:none!important;
+ }
+
+ .bd-example {
+     overflow:scroll;
+ }
+
+ .img-responsive {
+     display: block;
+     margin: 0 auto;
+ }
+
+ #ul-menu {
+     text-align:center;
+
+ }
+
+ .nav-link.active {
+     margin: 0 auto;
+ }
+
+ #botao-evento {
+     display: block;
+     margin: 0 auto;
+     width: 40%;
  }
 }
 
