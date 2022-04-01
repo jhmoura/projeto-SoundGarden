@@ -88,6 +88,9 @@ section.full{
     left: 0;
 }
 
+#para-mobile {
+    display:none;
+}
 
 
 article.evento {
@@ -105,6 +108,9 @@ footer nav ul li  {
 
 /* Responsividade laptop */
 @media all and (max-width: 1024px) {
+    #para-mobile {
+        display:none;
+    }
 
 }
 
@@ -123,6 +129,10 @@ footer nav ul li  {
     .table {
         width: 550px;
     }
+
+    #para-mobile {
+        display:none;
+    }
 }
 
 /* Responsividade celular */
@@ -140,6 +150,39 @@ footer nav ul li  {
     #lateral{
         display:none!important;
     }
+
+    #para-mobile {
+        display:inline-block;
+    }
+
+    #main {
+        padding: 3px!important;
+    }
+
+    .nav-link.active {
+        width: 120px!important;
+    }
+
+    .text-center {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #titulo-admin {
+        font-size: 25px;
+    }
+
+    .img-responsive {
+        max-width: 60%;
+    }
+
+ .mb-3 {
+     box-sizing: initial!important;
+ }
+
+ #section-carrossel {
+     display:none!important;
+ }
 }
 
 
